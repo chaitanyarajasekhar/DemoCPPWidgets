@@ -20,11 +20,19 @@ protected:
 
 private:
 
+	bool bShow = true;
+
 	UPROPERTY(meta = (BindWidget))
 		class UTextBlock* MessageTextBlock;
 
 	UPROPERTY(meta = (BindWidget))
 		class UCanvasPanel* MenuCanvasPanel;
+
+	UPROPERTY(meta = (BindWidget))
+		class UButton* ToggleButton;
+
+	UFUNCTION()
+		void OnToggleButtonClicked();
 
 
 	
